@@ -1,3 +1,5 @@
+// 本程序用于获取各个平台的商品价格
+// 在打开一个商品页面后，程序获得该商品的价格，并显示在控制台
 var self = require('sdk/self');
 var buttons = require('sdk/ui/button/action'); 
 var tabs = require("sdk/tabs");
