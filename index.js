@@ -20,6 +20,7 @@ function handleClick(state) {//当发现点击事件时，显示配置面板
 	
 }
 
+//等待页面加载完成的load时间，当页面完成加载时，将js代码加载到页面上
 tabs.on('load',function(tab){		
 	worker = tabs.activeTab.attach({
 		contentScriptFile:[self.data.url('getPrice.js'),self.data.url('jquery.js')]
