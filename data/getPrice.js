@@ -13,6 +13,11 @@
 			if(priceTag){
 				price = priceTag.textContent.replace(/¥/, "");
 			}
+		}else if(url.indexOf("www.miyabaobe") != -1){
+			var priceTag = document.querySelector('#item_price');
+			if(priceTag){
+				price = priceTag.textContent;
+			}
 		}
 		
 		self.port.emit("returnPrice", price);
