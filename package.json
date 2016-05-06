@@ -1,0 +1,15 @@
+{
+  "title": "getSalesInfo",
+  "name": "getsalesinfo",
+  "version": "0.0.1",
+  "description": "get the goods sales infomation.",
+  "main": "index.js",
+  "author": "renmao",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
