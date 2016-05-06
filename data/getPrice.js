@@ -18,6 +18,16 @@
 			if(priceTag){
 				price = priceTag.textContent;
 			}
+		}else if(url.indexOf("item.yunhou") != -1){
+			var priceTag = document.querySelector('#jScarePrice');
+			if(priceTag){
+				price = priceTag.textContent;
+			}
+		}else if(url.indexOf("http://www.kaola.com/product") != -1){
+			var priceTag = document.querySelector('#js_currentPrice span');
+			if(priceTag){
+				price = priceTag.textContent;
+			}
 		}
 		
 		self.port.emit("returnPrice", price);
