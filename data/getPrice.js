@@ -8,6 +8,11 @@
 			if(priceTag){
 				price = priceTag.textContent.replace(/￥/, "");
 			}
+		}else if(url.indexOf("product.suning") != -1){
+			var priceTag = document.querySelector('#promotionPrice');
+			if(priceTag){
+				price = priceTag.textContent.replace(/¥/, "");
+			}
 		}
 		
 		self.port.emit("returnPrice", price);
